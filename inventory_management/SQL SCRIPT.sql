@@ -1,3 +1,7 @@
+/* USE THIS SCRIPT TO CREATE DATABASE IN phpMySqlAdmin */
+
+
+
 CREATE TABLE users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) NOT NULL,
