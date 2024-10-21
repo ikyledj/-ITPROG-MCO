@@ -27,9 +27,10 @@
         .login-box input[type="text"], .login-box input[type="password"] {
             width: 100%;
             padding: 10px;
-            margin: 10px 0;
+            margin: 10px 0px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            box-sizing: border-box;
         }
         .login-box input[type="submit"] {
             width: 100%;
@@ -39,6 +40,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            box-sizing: border-box;
         }
         .login-box input[type="submit"]:hover {
             background-color: #218838;
