@@ -27,6 +27,8 @@ $result = $stmt->get_result();
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <?php include 'partials/header.php'; ?>
+    <?php include 'partials/sidebar.php'; ?>
     <h2>Transaction History</h2>
     <table border="1">
         <tr>
