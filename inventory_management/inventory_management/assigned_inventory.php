@@ -27,23 +27,28 @@ $result = $stmt->get_result();
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>Assigned Inventory</h2>
-    <table border="1">
-        <tr>
-            <th>Item Name</th>
-            <th>Category</th>
-            <th>Quantity</th>
-            <th>Unit Price</th>
-        </tr>
-        <?php while ($row = $result->fetch_assoc()) { ?>
+    <?php include 'partials/header.php'; ?>
+    <?php include 'partials/sidebar.php'; ?>
+    <div class="content" id="content">
+        <h2>Assigned Inventory</h2>
+        <table border="1">
             <tr>
-                <td><?= $row['item_name']; ?></td>
-                <td><?= $row['category']; ?></td>
-                <td><?= $row['initial_quantity']; ?></td>
-                <td><?= $row['unit_price']; ?></td>
+                <th>Item Name</th>
+                <th>Category</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
             </tr>
-        <?php } ?>
-    </table>
-    <a href="logout.php">Logout</a>
+            <?php while ($row = $result->fetch_assoc()) { ?>
+                <tr>
+                    <td><?= $row['item_name']; ?></td>
+                    <td><?= $row['category']; ?></td>
+                    <td><?= $row['initial_quantity']; ?></td>
+                    <td><?= $row['unit_price']; ?></td>
+                </tr>
+            <?php } ?>
+        </table>
+        <a href="logout.php">Logout</a>
+    </div>
+    
 </body>
 </html>

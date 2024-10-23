@@ -14,15 +14,20 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'employee') {
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>Welcome, <?= $_SESSION['username']; ?></h2>
+    <?php include 'partials/header.php'; ?>
+    <?php include 'partials/sidebar.php'; ?>
+    <div class="content" id="content">
+        <h2>Welcome, <?= $_SESSION['username']; ?></h2>
+        
+        <nav>
+            <ul>
+                <li><a href="assigned_inventory.php">View Assigned Inventory</a></li>
+                <li><a href="transaction_history.php">Transaction History</a></li>
+            </ul>
+        </nav>
+        
+        <a href="logout.php">Logout</a>
+    </div>
 
-    <nav>
-        <ul>
-            <li><a href="assigned_inventory.php">View Assigned Inventory</a></li>
-            <li><a href="transaction_history.php">Transaction History</a></li>
-        </ul>
-    </nav>
-
-    <a href="logout.php">Logout</a>
 </body>
 </html>
