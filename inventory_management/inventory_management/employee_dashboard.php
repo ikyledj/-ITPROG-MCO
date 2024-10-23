@@ -16,14 +16,12 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'employee') {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         .nav-buttons {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            gap: 20px;
-        }
-
-        .nav-buttons li {
-            margin: 0;
+            display: flex;  
+            justify-content: flex;  
+            gap: 20px;  
+            list-style: none;  
+            padding: 0;  
+            margin: 0;  
         }
 
         .nav-button {
@@ -35,7 +33,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'employee') {
             text-decoration: none;
             border-radius: 25px;
             transition: background-color 0.3s ease;
-            gap: 12px; /* Adds consistent spacing between icon and text */
+            gap: 12px;
         }
 
         .nav-button:hover {
@@ -43,9 +41,10 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'employee') {
         }
 
         .nav-button img {
-            width: 20px; /* Set consistent width */
-            height: 20px; /* Set consistent height */
+            width: 20px;
+            height: 20px;
         }
+
     </style>
 </head>
 <body>
@@ -53,7 +52,9 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'employee') {
     <?php include 'partials/sidebar.php'; ?>
     <div class="content" id="content">
         <h2 style="text-align: center;">Welcome, <?= $_SESSION['username']; ?></h2>
-        
+    </div>
+     
+    <div class="content" id="content">
         <nav>
             <ul class="nav-buttons">
                 <li>

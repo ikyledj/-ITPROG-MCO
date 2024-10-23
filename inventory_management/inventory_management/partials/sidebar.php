@@ -17,10 +17,33 @@
     white-space: nowrap;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 20px;
+    z-index: 1;
+}
+
+.sidebar.active {
+    width: 240px;
 }
 
 .sidebar:hover {
     width: 240px;
+}
+
+/* Main menu container */
+.menu-items {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Logout container */
+.bottom-container {
+    margin-top: auto;
+    padding-bottom: 20px;
+}
+
+.sidebar:hover ~ .content,
+.sidebar.active ~ .content {
+    margin-left: 240px;
 }
 
 .sidebar a {
@@ -50,6 +73,7 @@
     display: inline-block;
 }
 
+.sidebar.active a span,
 .sidebar:hover a span {
     transform: translateX(0);
     opacity: 1;
@@ -64,32 +88,54 @@
     margin-left: 60px;
     padding: 20px;
     transition: margin-left 0.3s ease;
+    z-index: 0;
 }
 
-.sidebar:hover + .content {
-    margin-left: 240px;
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.toggle-btn:hover {
+    background-color: #444;
 }
 </style>
 </head>
 <body>
 
 <div class="sidebar" id="sidebar">
-    <a href="employee_dashboard.php">
-        <img src="logo-icons/Home Stroke Rounded.svg" alt="Home Icon">
-        Home
-    </a>
-    <a href="#">
-        <img src="logo-icons/Account Setting Rounded.svg" alt="Manage Account Icon">
-        Manage Account
-    </a>
-    <a href="#">
-        <img src="logo-icons/Moon 02 Rounded.svg" alt="Dark Mode Icon">
-        Dark Mode
-    </a>
-    <a href="logout.php">
-        <img src="logo-icons/Logout square stroke rounded.svg" alt="Logout Icon">
-        Logout
-    </a>
+    <div class="menu-items">
+        <a href="employee_dashboard.php">
+            <img src="logo-icons/Home Stroke Rounded.svg" alt="Home Icon">
+            <span>Home</span>
+        </a>
+        <a href="#">
+            <img src="logo-icons/Account Setting Rounded.svg" alt="Manage Account Icon">
+            <span>Manage Account</span>
+        </a>
+        <a href="transaction_history.php">
+            <img src="logo-icons/Clock 02 Rounded.svg" alt="History Icon">
+            <span>Transaction History</span>
+        </a>
+    </div>
+    <div class="bottom-container">
+        <a href="#">
+            <img src="logo-icons/Moon 02 Rounded.svg" alt="Dark Mode Icon">
+            <span>Dark Mode</span>
+        </a>
+        <a href="logout.php">
+            <img src="logo-icons/Logout square stroke rounded.svg" alt="Logout Icon">
+            <span>Logout</span>
+        </a>
+    </div>
 </div>
 
 <script>
