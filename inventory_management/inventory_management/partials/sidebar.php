@@ -37,8 +37,12 @@
 }
 
 .sidebar a:hover {
-    background-color: #011F1D;
+    background-color: #267058;
     color: #fff;
+    border-radius: 15px;
+    padding: 12px 24px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .toggle-btn {
@@ -52,6 +56,7 @@
     border: none;
     cursor: pointer;
     z-index: 2;
+    transition: background-color 0.3s ease;
 }
 
 .toggle-btn:hover {
