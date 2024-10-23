@@ -8,7 +8,7 @@
         .header-bar {
             width: 100%;
             height: 8.25%;
-            background-color: #333;
+            background-color: #011F1D;
             color: white;
             padding: 10px 20px;
             position: fixed;

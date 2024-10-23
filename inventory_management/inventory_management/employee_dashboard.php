@@ -26,7 +26,6 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'employee') {
             </ul>
         </nav>
         
-        <a href="logout.php">Logout</a>
     </div>
 
 </body>
