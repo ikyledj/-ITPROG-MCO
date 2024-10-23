@@ -9,6 +9,11 @@ body {
     margin: 0;
 }
 
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
 form {
     display: flex;
     flex-direction: column;
