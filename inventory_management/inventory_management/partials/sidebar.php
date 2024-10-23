@@ -10,6 +10,8 @@
     left: -250px;
     background-color: #011F1D;
     padding-top: 70px;
+    display: flex;
+    flex-direction: column;
     transition: 0.3s;
     z-index: 1;
 }
