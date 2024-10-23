@@ -47,7 +47,6 @@ $result = $stmt->get_result();
                 </tr>
             <?php } ?>
         </table>
-        <a href="logout.php">Logout</a>
     </div>
     
 </body>

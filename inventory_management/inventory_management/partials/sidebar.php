@@ -3,81 +3,75 @@
 <head>
 <style>
 .sidebar {
-    height: 100%;
-    width: 200px;
+    height: 90%; 
+    width: 60px;
     position: fixed;
-    top: 0;
-    left: -250px;
+    top: 10%; 
+    left: 0;
     background-color: #011F1D;
-    padding-top: 70px;
+    padding-top: 20px; 
     display: flex;
     flex-direction: column;
-    transition: 0.3s;
-    z-index: 1;
+    transition: all 0.3s ease;
+    overflow-x: hidden;
+    white-space: nowrap;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 20px;
 }
 
-.sidebar.active {
-    left: 0;
+.sidebar:hover {
+    width: 240px;
 }
 
 .sidebar a {
-    padding: 8px 8px 8px 32px;
+    position: relative;
+    margin: 4px 8px;
+    padding: 12px 13px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     color: #717F7E;
-    display: flex; /* Use flexbox to align icon and text */
+    display: flex;
     align-items: center;
     transition: 0.3s;
+    border-radius: 15px;
 }
 
 .sidebar a img {
-    margin-right: 10px; /* Space between icon and text */
-    width: 20px; /* Adjust size */
+    min-width: 20px;
     height: 20px;
+    margin-right: 18px;
+}
+
+.sidebar a span {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.sidebar:hover a span {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .sidebar a:hover {
     background-color: #267058;
     color: #fff;
-    border-radius: 15px;
-    padding: 12px 24px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.toggle-btn {
-    position: fixed;
-    left: 20px;
-    top: 20px;
-    background-color: #011F1D;
-    color: #717F7E;
-    padding: 10px 15px;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    z-index: 2;
-    transition: background-color 0.3s ease;
-}
-
-.toggle-btn:hover {
-    background-color: #011F1D;
-    color: #fff;
 }
 
 .content {
-    margin-left: 0;
+    margin-left: 60px;
     padding: 20px;
-    transition: 0.3s;
+    transition: margin-left 0.3s ease;
 }
 
-.content.shifted {
-    margin-left: 250px;
+.sidebar:hover + .content {
+    margin-left: 240px;
 }
 </style>
 </head>
 <body>
-
-<button class="toggle-btn" onclick="toggleSidebar()">☰</button>
 
 <div class="sidebar" id="sidebar">
     <a href="employee_dashboard.php">

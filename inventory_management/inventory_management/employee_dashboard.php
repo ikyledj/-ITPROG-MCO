@@ -35,15 +35,16 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'employee') {
             text-decoration: none;
             border-radius: 25px;
             transition: background-color 0.3s ease;
+            gap: 12px; /* Adds consistent spacing between icon and text */
         }
 
         .nav-button:hover {
             background-color: #267058;
         }
 
-        .nav-button i {
-            margin-right: 10px;
-            font-size: 1.1em;
+        .nav-button img {
+            width: 20px; /* Set consistent width */
+            height: 20px; /* Set consistent height */
         }
     </style>
 </head>
@@ -57,13 +58,13 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'employee') {
             <ul class="nav-buttons">
                 <li>
                     <a href="assigned_inventory.php" class="nav-button">
-                        <i class="fas fa-boxes"></i>
+                        <img src="logo-icons/Package sent rounded.svg" alt="Boxes Icon">
                         View Assigned Inventory
                     </a>
                 </li>
                 <li>
                     <a href="transaction_history.php" class="nav-button">
-                        <i class="fas fa-history"></i>
+                        <img src="logo-icons/Clock 02 Rounded.svg" alt="History Icon">
                         Transaction History
                     </a>
                 </li>
