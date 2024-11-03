@@ -12,12 +12,13 @@
             left: 0;
             right: 0;
             height: 82px;
-            background-color: #f8f9fa;
+            background-color: #ffffff;
             color: white;
             padding: 0 20px;
             display: flex;
             align-items: center;
             z-index: 1000;
+            transition: background-color 0.4s ease, color 0.4s ease;
         }
 
         body.dark-mode {

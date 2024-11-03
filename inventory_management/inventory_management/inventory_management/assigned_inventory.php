@@ -19,7 +19,7 @@ if ($conn->connect_error) {
 
 // Get assigned inventory for the logged-in employee
 $user_id = $_SESSION['user_id'];
-$sql = "SELECT inventory.item_name, inventory.category, assigned_inventory.initial_quantity
+$sql = "SELECT inventory.item_name, inventory.category, assigned_inventory.initial_quantity, inventory.unit_price
         FROM assigned_inventory
         JOIN inventory ON assigned_inventory.inventory_id = inventory.inventory_id
         WHERE assigned_inventory.user_id = ?";
@@ -33,13 +33,16 @@ $result = $stmt->get_result();
 <head>
     <meta charset="UTF-8">
     <title>Assigned Inventory</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
     <!-- Add Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         table {
             width: 100%;
-            border-collapse: collapse;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 15px;
+            overflow: hidden;
         }
         
         table, th, td {
@@ -58,9 +61,10 @@ $result = $stmt->get_result();
         
         td {
             background-color: #f2f2f2;
+            color: black;
         }
 
-        /* Modal styles */
+        /* Keep all other existing styles the same */
         .modal {
             display: none;
             position: fixed;
@@ -160,6 +164,7 @@ $result = $stmt->get_result();
                     <th>Item Name</th>
                     <th>Category</th>
                     <th>Initial Quantity</th>
+                    <th>Unit Price</th>
                 </tr>
             </thead>
             <tbody>
@@ -169,6 +174,7 @@ $result = $stmt->get_result();
                             <td><?= $row['item_name']; ?></td>
                             <td><?= $row['category']; ?></td>
                             <td><?= $row['initial_quantity']; ?></td>
+                            <td>Php <?= number_format($row['unit_price'], 2); ?></td>
                         </tr>
                     <?php endwhile; ?>
                 <?php else: ?>
