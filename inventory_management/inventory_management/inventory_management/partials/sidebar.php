@@ -3,11 +3,6 @@
 <head>
 <style>
 
-body {
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
-    transition: background-color 0.4s ease, color 0.4s ease;
-}
 .sidebar {
     height: 90%; 
     width: 60px;
