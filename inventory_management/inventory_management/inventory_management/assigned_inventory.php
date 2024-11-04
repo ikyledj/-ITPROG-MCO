@@ -125,6 +125,9 @@ $result = $stmt->get_result();
             text-align: center;
         }
 
+        body.dark-mode .edit-button {
+            background-color: #222;
+        }
         body.dark-mode .modal-content {
             background-color: #222;
             color: #ccc;

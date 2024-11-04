@@ -86,11 +86,11 @@ td {
     position: fixed;
     top: 10%; 
     left: 0;
-    background-color: #011F1D;
+    background-color: #002e20;
     padding-top: 20px; 
     display: flex;
     flex-direction: column;
-    transition: all 0.3s ease;
+    transition: width 0.3s ease, background-color 0.4s ease;
     overflow-x: hidden;
     white-space: nowrap;
     border-top-right-radius: 10px;
@@ -220,12 +220,31 @@ body.dark-mode {
     transition: color 0.4s ease, background-color 0.4s ease;
 }
 
+/* INPUT DARK MODE CSS */
+/* ================================================================== */
+body.dark-mode input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+body.dark-mode input[type="submit"] {
+    background-color: #002e20;
+    color: white;
+    cursor: pointer;
+}
+
+body.dark-mode input[type="submit"]:hover {
+    background-color: #218838;
+}
+
 /* TABLE DARK MODE CSS */
 /* ================================================================== */
 body.dark-mode table,
 body.dark-mode th,
 body.dark-mode td {
-    border-color: #ffffff;
+    border-color: #444;
     transition: background-color 0.4s ease;
 }
 
@@ -244,8 +263,8 @@ body.dark-mode td {
 /* SIDEBAR DARK MODE CSS */
 /* ================================================================== */
 body.dark-mode .sidebar {
-    background-color: #222;
-    transition: background-color 0.4s ease;
+    background-color: #011f1d;
+    transition: width 0.3s ease, background-color 0.4s ease;
 }
 
 body.dark-mode .sidebar a {
@@ -254,7 +273,7 @@ body.dark-mode .sidebar a {
 }
 
 body.dark-mode .sidebar a:hover {
-    background-color: #444;
+    background-color: #002e20;
     color: #fff;
 }
 
