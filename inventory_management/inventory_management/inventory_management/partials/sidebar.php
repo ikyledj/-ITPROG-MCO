@@ -118,7 +118,7 @@
             <img src="logo-icons/Home Stroke Rounded.svg" alt="Home Icon">
             <span>Home</span>
         </a>
-        <a href="#">
+        <a href="change_password.php">
             <img src="logo-icons/Account Setting Rounded.svg" alt="Manage Account Icon">
             <span>Manage Account</span>
         </a>
