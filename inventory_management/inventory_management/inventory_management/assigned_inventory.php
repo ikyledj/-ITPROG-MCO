@@ -37,32 +37,6 @@ $result = $stmt->get_result();
     <!-- Add Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            border-radius: 15px;
-            overflow: hidden;
-        }
-        
-        table, th, td {
-            border: 1px solid black;
-        }
-        
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-        
-        th {
-            background-color: #003E39;
-            color: white;
-        }
-        
-        td {
-            background-color: #f2f2f2;
-            color: black;
-        }
 
         /* Keep all other existing styles the same */
         .modal {
@@ -79,7 +53,7 @@ $result = $stmt->get_result();
         }
 
         .modal-content {
-            background-color: white;
+            background-color: #f0f0f0;
             margin: auto;
             padding: 20px;
             border: 1px solid #888;
@@ -120,7 +94,7 @@ $result = $stmt->get_result();
         }
 
         .confirm-button {
-            background-color: green;
+            background-color: #002e20;
             color: white;
             padding: 5px 10px;
             border: none;
@@ -149,6 +123,21 @@ $result = $stmt->get_result();
 
         .center {
             text-align: center;
+        }
+
+        body.dark-mode .modal-content {
+            background-color: #222;
+            color: #ccc;
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+
+        body.dark-mode .close {
+            color: #ccc;
+            transition: color 0.4s ease;
+        }
+
+        body.dark-mode .close:hover, body.dark-mode .close:focus {
+            color: #fff;
         }
     </style>
 </head>
