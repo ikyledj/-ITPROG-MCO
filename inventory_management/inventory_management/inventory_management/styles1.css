@@ -1,4 +1,7 @@
-/* General */
+/* GENERAL CSS */
+/* ================================================================== */
+/* ================================================================== */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
@@ -8,12 +11,6 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    transition: color 0.4s ease, background-color 0.4s ease;
-}
-
-body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
     transition: color 0.4s ease, background-color 0.4s ease;
 }
 
@@ -27,7 +24,8 @@ form {
     border-radius: 8px;
 }
 
-/* Input */
+/* INPUT CSS */
+/* ================================================================== */
 input {
     margin-bottom: 10px;
     padding: 10px;
@@ -51,7 +49,8 @@ input[type="submit"]:hover {
     text-align: center;
 }
 
-/* Table */
+/* TABLE CSS */
+/* ================================================================== */
 table {
     width: 100%;
     border-collapse: separate;
@@ -79,27 +78,8 @@ td {
     color: black;
 }
 
-/* Table Dark Mode */
-body.dark-mode table,
-body.dark-mode th,
-body.dark-mode td {
-    border-color: #ffffff;
-    transition: background-color 0.4s ease;
-}
-
-body.dark-mode th {
-    background-color: #444;
-    color: #fff;
-    transition: color 0.4s ease, background-color 0.4s ease;
-}
-
-body.dark-mode td {
-    background-color: #222;
-    color: #fff;
-    transition: color 0.4s ease, background-color 0.4s ease;
-}
-
-/* Sidebar */
+/* SIDEBAR CSS */
+/* ================================================================== */
 .sidebar {
     height: 90%; 
     width: 60px;
@@ -206,23 +186,8 @@ body.dark-mode td {
     background-color: #444;
 }
 
-/* Sidebar Dark Mode */
-body.dark-mode .sidebar {
-    background-color: #222;
-    transition: background-color 0.4s ease;
-}
-
-body.dark-mode .sidebar a {
-    color: #ccc;
-    transition: color 0.4s ease, background-color 0.4s ease;
-}
-
-body.dark-mode .sidebar a:hover {
-    background-color: #444;
-    color: #fff;
-}
-
-/* Header */
+/* HEADER CSS */
+/* ================================================================== */
 .header {
     position: fixed;
     top: 0;
@@ -238,17 +203,63 @@ body.dark-mode .sidebar a:hover {
     transition: color 0.4s ease, background-color 0.4s ease;
 }
 
-body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-}
-
 .header h1 {
     margin: 0;
     font-size: 24px;
     color: #003E39;
 }
 
+
+/* DARK MODE CSS*/
+/* ================================================================== */
+/* ================================================================== */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+/* TABLE DARK MODE CSS */
+/* ================================================================== */
+body.dark-mode table,
+body.dark-mode th,
+body.dark-mode td {
+    border-color: #ffffff;
+    transition: background-color 0.4s ease;
+}
+
+body.dark-mode th {
+    background-color: #444;
+    color: #fff;
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+body.dark-mode td {
+    background-color: #222;
+    color: #fff;
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+/* SIDEBAR DARK MODE CSS */
+/* ================================================================== */
+body.dark-mode .sidebar {
+    background-color: #222;
+    transition: background-color 0.4s ease;
+}
+
+body.dark-mode .sidebar a {
+    color: #ccc;
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+body.dark-mode .sidebar a:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+/* HEADER DARK MODE CSS */
+/* ================================================================== */
 body.dark-mode .header {
     background-color: #121212;
     color: #ffffff;
