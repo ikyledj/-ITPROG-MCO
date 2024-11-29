@@ -30,21 +30,23 @@ $result = $stmt->get_result();
     <?php include 'partials/header.php'; ?>
     <?php include 'partials/sidebar.php'; ?>
     <div class="content" id="content">
+        <div class="table-container">
         <h2 style="text-align: center;">Transaction History</h2>
-        <table border="1">
-            <tr>
-                <th>Item Name</th>
-                <th>Quantity Added</th>
-                <th>Transaction Date</th>
-            </tr>
-            <?php while ($row = $result->fetch_assoc()) { ?>
+            <table border="1">
                 <tr>
-                    <td><?= $row['item_name']; ?></td>
-                    <td><?= $row['quantity_added']; ?></td>
-                    <td><?= $row['transaction_date']; ?></td>
+                    <th>Item Name</th>
+                    <th>Quantity Added</th>
+                    <th>Transaction Date</th>
                 </tr>
-            <?php } ?>
-        </table>
+                <?php while ($row = $result->fetch_assoc()) { ?>
+                    <tr>
+                        <td><?= $row['item_name']; ?></td>
+                        <td><?= $row['quantity_added']; ?></td>
+                        <td><?= $row['transaction_date']; ?></td>
+                    </tr>
+                <?php } ?>
+            </table>
+        </div>
     </div>
 </body>
 </html>

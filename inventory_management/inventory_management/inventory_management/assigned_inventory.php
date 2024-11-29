@@ -148,35 +148,35 @@ $result = $stmt->get_result();
     <?php include 'partials/header.php'; ?>
     <?php include 'partials/sidebar.php'; ?>
     <div class="content" id="content">
+        <div class="table-container">
         <h2 style="text-align: center;">Assigned Inventory for <?= $_SESSION['username']; ?></h2>
-        
-        <table>
-            <thead>
-                <tr>
-                    <th>Item Name</th>
-                    <th>Category</th>
-                    <th>Initial Quantity</th>
-                    <th>Unit Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php if ($result->num_rows > 0): ?>
-                    <?php while($row = $result->fetch_assoc()): ?>
-                        <tr>
-                            <td><?= $row['item_name']; ?></td>
-                            <td><?= $row['category']; ?></td>
-                            <td><?= $row['initial_quantity']; ?></td>
-                            <td>Php <?= number_format($row['unit_price'], 2); ?></td>
-                        </tr>
-                    <?php endwhile; ?>
-                <?php else: ?>
+            <table>
+                <thead>
                     <tr>
-                        <td colspan="3">No assigned inventory found.</td>
+                        <th>Item Name</th>
+                        <th>Category</th>
+                        <th>Initial Quantity</th>
+                        <th>Unit Price</th>
                     </tr>
-                <?php endif; ?>
-            </tbody>
-        </table>
-
+                </thead>
+                <tbody>
+                    <?php if ($result->num_rows > 0): ?>
+                        <?php while($row = $result->fetch_assoc()): ?>
+                            <tr>
+                                <td><?= $row['item_name']; ?></td>
+                                <td><?= $row['category']; ?></td>
+                                <td><?= $row['initial_quantity']; ?></td>
+                                <td>Php <?= number_format($row['unit_price'], 2); ?></td>
+                            </tr>
+                        <?php endwhile; ?>
+                    <?php else: ?>
+                        <tr>
+                            <td colspan="3">No assigned inventory found.</td>
+                        </tr>
+                    <?php endif; ?>
+                </tbody>
+            </table>
+        </div>
         <!-- Edit Inventory button outside of the table, centered -->
         <div class="center">
             <button class="edit-button" onclick="openModal()">Edit Inventory</button>

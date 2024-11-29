@@ -79,6 +79,16 @@ td {
     color: #002e20;
 }
 
+.table-container {
+    border: 2px solid #D1DAD8; /* Black border for the rectangle */
+    border-radius: 10px; /* Optional: rounded corners */
+    padding: 50px; /* Space between the table and the border */
+    margin: 20px auto; /* Center the rectangle and add spacing */
+    max-width: 800px; /* Limit the width for better display */
+    background-color: #D1DAD8; /* Optional: background color */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
+}
+
 /* SIDEBAR CSS */
 /* ================================================================== */
 .sidebar {
@@ -258,6 +268,11 @@ body.dark-mode td {
     background-color: #040506;
     color: #d1fff1;
     transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+body.dark-mode .table-container {
+    border: 2px solid #242D2C; /* Black border for the rectangle */
+    background-color: #242D2C; /* Optional: background color */
 }
 
 /* SIDEBAR DARK MODE CSS */
