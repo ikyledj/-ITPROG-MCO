@@ -4,7 +4,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #f9fafb;
+    color: #002e20;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,7 +41,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #000000;
+    background-color: #305a4c;
 }
 
 .error-message {
@@ -60,7 +61,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid #002e20;
 }
 
 th, td {
@@ -69,13 +70,13 @@ th, td {
 }
 
 th {
-    background-color: #003E39;
+    background-color: #002e20;
     color: white;
 }
 
 td {
     background-color: #f2f2f2;
-    color: black;
+    color: #002e20;
 }
 
 /* SIDEBAR CSS */
@@ -158,7 +159,7 @@ td {
 }
 
 .sidebar a:hover {
-    background-color: #267058;
+    background-color: #305a4c;
     color: #fff;
 }
 
@@ -195,7 +196,7 @@ td {
     right: 0;
     height: 82px;
     background-color: #f8f9fa;
-    color: white;
+    color: #002e20;
     padding: 0 20px;
     display: flex;
     align-items: center;
@@ -206,17 +207,16 @@ td {
 .header h1 {
     margin: 0;
     font-size: 24px;
-    color: #003E39;
+    color: #002e20;
 }
-
 
 /* DARK MODE CSS*/
 /* ================================================================== */
 /* ================================================================== */
 
 body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #040506;
+    color: #d1fff1;
     transition: color 0.4s ease, background-color 0.4s ease;
 }
 
@@ -225,18 +225,18 @@ body.dark-mode {
 body.dark-mode input {
     margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #a5cfc1;
     border-radius: 5px;
 }
 
 body.dark-mode input[type="submit"] {
-    background-color: #002e20;
-    color: white;
+    background-color: #d1fff1;
+    color: #040506;
     cursor: pointer;
 }
 
 body.dark-mode input[type="submit"]:hover {
-    background-color: #218838;
+    background-color: #a5cfc1;
 }
 
 /* TABLE DARK MODE CSS */
@@ -244,47 +244,59 @@ body.dark-mode input[type="submit"]:hover {
 body.dark-mode table,
 body.dark-mode th,
 body.dark-mode td {
-    border-color: #444;
+    border-color: #a5cfc1;
     transition: background-color 0.4s ease;
 }
 
 body.dark-mode th {
-    background-color: #444;
-    color: #fff;
+    background-color: #002b42;
+    color: #d1fff1;
     transition: color 0.4s ease, background-color 0.4s ease;
 }
 
 body.dark-mode td {
-    background-color: #222;
-    color: #fff;
+    background-color: #040506;
+    color: #d1fff1;
     transition: color 0.4s ease, background-color 0.4s ease;
 }
 
 /* SIDEBAR DARK MODE CSS */
 /* ================================================================== */
 body.dark-mode .sidebar {
-    background-color: #011f1d;
+    background-color: #d1fff1;
     transition: width 0.3s ease, background-color 0.4s ease;
 }
 
 body.dark-mode .sidebar a {
-    color: #ccc;
+    color: #002e20;
     transition: color 0.4s ease, background-color 0.4s ease;
 }
 
 body.dark-mode .sidebar a:hover {
-    background-color: #002e20;
-    color: #fff;
+    background-color: #a5cfc1;
+    color: #040506;
 }
 
 /* HEADER DARK MODE CSS */
 /* ================================================================== */
 body.dark-mode .header {
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #040506;
+    color: #d1fff1;
     transition: color 0.4s ease, background-color 0.4s ease;
 }
 
 body.dark-mode .header h1 {
-    color: white;
+    color: #d1fff1;
+}
+
+/* Dark Mode SVG Icon Styles */
+body.dark-mode .sidebar img {
+    /* Invert colors for dark mode */
+    filter: invert(1) brightness(2);
+}
+
+/* Optional: Add a subtle hover effect for dark mode */
+body.dark-mode .sidebar a:hover img {
+    filter: invert(1) brightness(2.5);
+    opacity: 0.9;
 }

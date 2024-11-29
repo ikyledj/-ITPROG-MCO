@@ -28,7 +28,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'employee') {
             display: inline-flex;
             align-items: center;
             padding: 12px 24px;
-            background-color: #003E39;
+            background-color: #002e20;
             color: white;
             text-decoration: none;
             border-radius: 25px;
@@ -37,12 +37,26 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'employee') {
         }
 
         .nav-button:hover {
-            background-color: #267058;
+            background-color: #305a4c;
         }
 
         .nav-button img {
             width: 20px;
             height: 20px;
+        }
+
+        body.dark-mode .nav-button {
+        background-color: #d1fff1;
+        color: #002e20;
+        transition: background-color 0.3s ease;
+        }
+
+        body.dark-mode .nav-button:hover {
+            background-color: #a5cfc1;
+        }
+
+        body.dark-mode .nav-button img {
+            filter: invert(1) brightness(2);
         }
 
     </style>
