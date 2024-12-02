@@ -30,8 +30,8 @@ $result = $stmt->get_result();
     <?php include 'partials/header.php'; ?>
     <?php include 'partials/sidebar.php'; ?>
     <div class="content" id="content">
+    <h1 style="text-align: center;">Transaction History</h1>
         <div class="table-container">
-        <h2 style="text-align: center;">Transaction History</h2>
             <table border="1">
                 <tr>
                     <th>Item Name</th>

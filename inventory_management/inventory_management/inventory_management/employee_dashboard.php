@@ -64,11 +64,9 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'employee') {
 <body>
     <?php include 'partials/header.php'; ?>
     <?php include 'partials/sidebar.php'; ?>
-    <div class="content" id="content">
-        <h2 style="text-align: center;">Welcome, <?= $_SESSION['username']; ?></h2>
-    </div>
      
     <div class="content" id="content">
+    <h1 style="text-align: center;">Welcome, <?= $_SESSION['username']; ?></h1>
         <nav>
             <ul class="nav-buttons">
                 <li>

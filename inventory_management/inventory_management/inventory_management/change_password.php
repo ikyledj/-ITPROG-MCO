@@ -45,11 +45,13 @@ if (isset($_POST['new_password'], $_POST['confirm_password'])) {
     <?php include 'partials/sidebar.php'; ?>
 
     <div class="content" id="content">
-        <form method="POST">
-            <input type="password" name="new_password" placeholder="New Password" required>
-            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
-            <input type="submit" value="Change Password">
-        </form>
+        <div class="input-container">
+            <form method="POST">
+                <input type="password" name="new_password" placeholder="New Password" required>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                <input type="submit" value="Change Password">
+            </form>
+        </div>
     </div>
     
 </body>

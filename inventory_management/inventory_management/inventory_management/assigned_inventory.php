@@ -148,8 +148,8 @@ $result = $stmt->get_result();
     <?php include 'partials/header.php'; ?>
     <?php include 'partials/sidebar.php'; ?>
     <div class="content" id="content">
+    <h1 style="text-align: center;">Assigned Inventory for <br><?= $_SESSION['username']; ?></h1>
         <div class="table-container">
-        <h2 style="text-align: center;">Assigned Inventory for <?= $_SESSION['username']; ?></h2>
             <table>
                 <thead>
                     <tr>
