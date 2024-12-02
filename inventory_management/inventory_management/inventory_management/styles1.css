@@ -58,7 +58,7 @@ input[type="submit"]:hover {
 }
 
 .input-container {
-    background-color: #f0f8ff; /* Change this to your desired color */
+    background-color: #ECEFF0; /* Change this to your desired color */
     padding: 20px; /* Optional: Add padding for spacing */
     /* border: 1px solid #ccc; */
     border-radius: 10px; /* Optional: Round the corners */

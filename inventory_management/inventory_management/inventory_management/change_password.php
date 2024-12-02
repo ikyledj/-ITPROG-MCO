@@ -45,6 +45,7 @@ if (isset($_POST['new_password'], $_POST['confirm_password'])) {
     <?php include 'partials/sidebar.php'; ?>
 
     <div class="content" id="content">
+    <h1 style="text-align: center;">Change Password</h1>
         <div class="input-container">
             <form method="POST">
                 <input type="password" name="new_password" placeholder="New Password" required>
