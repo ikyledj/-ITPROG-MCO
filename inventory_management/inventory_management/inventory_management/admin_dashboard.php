@@ -70,20 +70,14 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
             <ul class="nav-buttons">
                 <li>
                     <a href="register.php" class="nav-button">
-                        <img src="logo-icons/Add Account Rounded Icon.svg" alt="Create Employee Account Icon">
+                        <img src="logo-icons/User Plus Rounded.svg" alt="Create Employee Account Icon">
                         Create Employee Account
                     </a>
                 </li>
                 <li>
                     <a href="manage_accounts.php" class="nav-button">
-                        <img src="logo-icons/Manage Rounded User Settings.svg" alt="Manage Accounts Icon">
+                        <img src="logo-icons/User Edit Rounded.svg" alt="Manage Accounts Icon">
                         Manage Accounts
-                    </a>
-                </li>
-                <li>
-                    <a href="export_transactions.php" class="nav-button">
-                        <img src="logo-icons/Export Rounded Icons.svg" alt="Export Icon">
-                        Export Transactions (XML)
                     </a>
                 </li>
             </ul>

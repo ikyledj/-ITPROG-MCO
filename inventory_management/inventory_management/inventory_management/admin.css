@@ -1,0 +1,98 @@
+.nav-buttons {
+    display: flex;  
+    justify-content: flex-start;  
+    gap: 20px;  
+    list-style: none;  
+    padding: 0;  
+    margin: 0;  
+}
+
+.nav-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: #002e20;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    gap: 12px;
+}
+
+.nav-button:hover {
+    background-color: #305a4c;
+}
+
+.nav-button img {
+    width: 20px;
+    height: 20px;
+}
+
+body.dark-mode .nav-button {
+    background-color: #d1fff1;
+    color: #002e20;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode .nav-button:hover {
+    background-color: #a5cfc1;
+}
+
+body.dark-mode .nav-button img {
+    filter: invert(1) brightness(2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    margin: 0 auto; /* Center the form horizontally within its container */
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #ECEFF0;
+    font-family: 'Montserrat', Arial, sans-serif; /* Ensure Montserrat font is applied */
+    gap: 10px; /* Add space between elements */
+}
+
+/* Style the select dropdown */
+select, option {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #ECEFF0;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #fff; /* Match form background */
+}
+
+/* Style the button to match other buttons */
+button {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    background-color: #002e20; /* Primary color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+/* Add hover effect for the button */
+button:hover {
+    background-color: #305a4c; /* Slightly lighter color for hover */
+}
+
+body.dark-mode button {
+    background-color: #d1fff1;
+    color: #040506;
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+body.dark-mode button:hover {
+    background-color: #a5cfc1; /* Slightly lighter color for hover */
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
