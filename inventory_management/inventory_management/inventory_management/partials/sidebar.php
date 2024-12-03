@@ -34,10 +34,18 @@
             <img src="logo-icons/Account Setting Rounded.svg" alt="Manage Account Icon">
             <span>Manage Account</span>
         </a>
-        <a href="transaction_history.php">
-            <img src="logo-icons/Clock 02 Rounded.svg" alt="History Icon">
-            <span>Transaction History</span>
-        </a>
+        <?php if (isset($_SESSION['role']) && $_SESSION['role'] !== 'admin') { ?>
+            <a href="transaction_history.php">
+                <img src="logo-icons/Clock 02 Rounded.svg" alt="History Icon">
+                <span>Transaction History</span>
+            </a>
+        <?php } ?>
+        <?php if (isset($_SESSION['role']) && $_SESSION['role'] !== 'employee') { ?>
+            <a href="register.php">
+                <img src="logo-icons/Add Account Rounded Icon.svg" alt="Create Employee Account Icon">
+                <span>Add Employee</span>
+            </a>
+        <?php } ?>
     </div>
     <div class="bottom-container">
         <a href="javascript:void(0);" onclick="toggleDarkMode()">
