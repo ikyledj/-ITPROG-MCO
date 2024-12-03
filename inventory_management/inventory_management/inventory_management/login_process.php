@@ -18,6 +18,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 
         // Verify the password
         if (password_verify($password, $user['password'])) {
+            // Store user details in session
             $_SESSION['user_id'] = $user['user_id'];
             $_SESSION['username'] = $user['username'];
             $_SESSION['role'] = $user['role'];
@@ -25,19 +26,25 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
             // Redirect based on role
             if ($user['role'] == 'admin') {
                 header("Location: admin_dashboard.php");
-            } else {
+            } elseif ($user['role'] == 'employee') {
                 header("Location: employee_dashboard.php");
+            } else {
+                // Handle unexpected roles (optional)
+                echo "Invalid role assigned to user.";
             }
             exit();
         } else {
+            // Redirect back with error for invalid password
             header("Location: login.php?error=1");
             exit();
         }
     } else {
+        // Redirect back with error for invalid username
         header("Location: login.php?error=1");
         exit();
     }
 } else {
+    // Redirect back with error for incomplete form submission
     header("Location: login.php?error=1");
     exit();
 }
