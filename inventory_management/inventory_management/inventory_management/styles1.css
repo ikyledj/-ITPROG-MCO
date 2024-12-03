@@ -18,6 +18,16 @@ body {
     transition: color 0.4s ease, background-color 0.4s ease;
 }
 
+body {
+    background-image: url('logo-icons/wave-haikei.svg');
+    background-size: cover; /* Covers entire page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents image from repeating */
+    background-attachment: fixed; /* Keeps image fixed while scrolling */
+}
+
+
+
 form {
     display: flex;
     flex-direction: column;
