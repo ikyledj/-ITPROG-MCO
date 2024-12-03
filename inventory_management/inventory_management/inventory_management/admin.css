@@ -1,4 +1,4 @@
-.nav-buttons {
+/* .nav-buttons {
     display: flex;  
     justify-content: flex-start;  
     gap: 20px;  
@@ -11,7 +11,7 @@
     display: inline-flex;
     align-items: center;
     padding: 12px 24px;
-    background-color: #002e20;
+    background-color: #0d4159;
     color: white;
     text-decoration: none;
     border-radius: 25px;
@@ -20,7 +20,7 @@
 }
 
 .nav-button:hover {
-    background-color: #305a4c;
+    background-color: #6aa3be;
 }
 
 .nav-button img {
@@ -29,34 +29,34 @@
 }
 
 body.dark-mode .nav-button {
-    background-color: #d1fff1;
-    color: #002e20;
+    background-color: #0d4159;
+    color: #0d4159;
     transition: background-color 0.3s ease;
 }
 
 body.dark-mode .nav-button:hover {
-    background-color: #a5cfc1;
+    background-color: #417a95;
 }
 
 body.dark-mode .nav-button img {
     filter: invert(1) brightness(2);
-}
-
+} */
+/* 
 form {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    margin: 0 auto; /* Center the form horizontally within its container */
+    justify-content: center;
+    margin: 0 auto;
     width: 300px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     background-color: #ECEFF0;
-    font-family: 'Montserrat', Arial, sans-serif; /* Ensure Montserrat font is applied */
-    gap: 10px; /* Add space between elements */
+    font-family: 'Montserrat', Arial, sans-serif;
+    gap: 10px;
 }
 
-/* Style the select dropdown */
+
 select, option {
     font-family: 'Montserrat', Arial, sans-serif;
     font-size: 14px;
@@ -64,35 +64,400 @@ select, option {
     border: 1px solid #ECEFF0;
     border-radius: 5px;
     width: 100%;
-    background-color: #fff; /* Match form background */
+    background-color: #fff;
 }
 
-/* Style the button to match other buttons */
+
 button {
     font-family: 'Montserrat', Arial, sans-serif;
     font-size: 14px;
     padding: 10px;
     width: 100%;
-    background-color: #002e20; /* Primary color */
-    color: white; /* Text color */
-    border: none; /* No border */
+    background-color: #0d4159;
+    color: white;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.4s ease;
 }
 
-/* Add hover effect for the button */
+
 button:hover {
-    background-color: #305a4c; /* Slightly lighter color for hover */
+    background-color: #6aa3be;
 }
 
 body.dark-mode button {
-    background-color: #d1fff1;
+    background-color: #0d4159;
     color: #040506;
     transition: color 0.4s ease, background-color 0.4s ease;
 }
 
 body.dark-mode button:hover {
-    background-color: #a5cfc1; /* Slightly lighter color for hover */
+    background-color: #417a95;
+    transition: color 0.4s ease, background-color 0.4s ease;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+/* GENERAL CSS */
+/* ================================================================== */
+/* ================================================================== */
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #f9fafb;
+    color: #0d4159;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
     transition: color 0.4s ease, background-color 0.4s ease;
 }
+
+body {
+    background-image: url('logo-icons/admin wave light.svg');
+    background-size: cover; /* Covers entire page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents image from repeating */
+    background-attachment: fixed; /* Keeps image fixed while scrolling */
+    transition: background-color 0.4s ease, color 0.4s ease, filter 0.4s ease;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form {
+    background-color: #ECEFF0;
+}
+
+/* INPUT CSS */
+/* ================================================================== */
+input {
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ECEFF0;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #0d4159;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #6aa3be;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.input-container {
+    background-color: #ECEFF0; /* Change this to your desired color */
+    padding: 20px; /* Optional: Add padding for spacing */
+    /* border: 1px solid #ccc; */
+    border-radius: 10px; /* Optional: Round the corners */
+    margin-bottom: 20px; /* Optional: Space below the container */
+}
+
+/* TABLE CSS */
+/* ================================================================== */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid #6aa3be;
+}
+
+th, td {
+    padding: 15px;
+}
+
+th {
+    background-color: #0d4159;
+    color: white;
+    text-align: center;
+}
+
+td {
+    background-color: #f2f2f2;
+    color: #0d4159;
+    text-align: left;
+}
+
+.table-container {
+    /* border: 2px solid #ECEFF0; */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 800px;
+    background-color: #ECEFF0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* SIDEBAR CSS */
+/* ================================================================== */
+.sidebar {
+    height: 90%; 
+    width: 60px;
+    position: fixed;
+    top: 10%; 
+    left: 0;
+    background-color: #0d4159;
+    padding-top: 20px; 
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s ease, background-color 0.4s ease;
+    overflow-x: hidden;
+    white-space: nowrap;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 20px;
+    z-index: 1;
+}
+
+.sidebar.active {
+    width: 240px;
+}
+
+.sidebar:hover {
+    width: 240px;
+}
+
+/* Main menu container */
+.menu-items {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Logout container */
+.bottom-container {
+    margin-top: auto;
+    padding-bottom: 20px;
+}
+
+.sidebar:hover ~ .content,
+.sidebar.active ~ .content {
+    margin-left: 240px;
+}
+
+.sidebar a {
+    position: relative;
+    margin: 4px 8px;
+    padding: 12px 13px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #717F7E;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.sidebar a img {
+    min-width: 20px;
+    height: 20px;
+    margin-right: 18px;
+}
+
+.sidebar a span {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.sidebar.active a span,
+.sidebar:hover a span {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.sidebar a:hover {
+    background-color: #6aa3be;
+    color: #fff;
+    transition: all 0.15s ease;
+}
+
+.content {
+    margin-left: 60px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+    z-index: 0;
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.toggle-btn:hover {
+    background-color: #444;
+}
+
+/* HEADER CSS */
+/* ================================================================== */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 82px;
+    background-color: #f8f9fa;
+    color: #0d4159;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #0d4159;
+}
+
+/* DARK MODE CSS*/
+/* ================================================================== */
+/* ================================================================== */
+
+body.dark-mode {
+    background-color: #040506;
+    color: #a6daf2;
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+body.dark-mode {
+    background-image: url('logo-icons/admin wave dark.svg');
+    transition: background-color 0.4s ease, color 0.4s ease, filter 0.4s ease;
+}
+
+body.dark-mode form {
+    background-color: #0F1212;
+}
+
+/* INPUT DARK MODE CSS */
+/* ================================================================== */
+body.dark-mode input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #417a95;
+    border-radius: 5px;
+}
+
+body.dark-mode input[type="submit"] {
+    background-color: #a6daf2;
+    color: #040506;
+    cursor: pointer;
+}
+
+body.dark-mode input[type="submit"]:hover {
+    background-color: #417a95;
+}
+
+body.dark-mode .input-container {
+    background-color: #0F1212; /* Change this to your desired color */
+    padding: 20px; /* Optional: Add padding for spacing */
+    /* border: 1px solid #ccc; */
+    border-radius: 10px; /* Optional: Round the corners */
+    margin-bottom: 20px; /* Optional: Space below the container */
+}
+
+/* TABLE DARK MODE CSS */
+/* ================================================================== */
+body.dark-mode table,
+body.dark-mode th,
+body.dark-mode td {
+    border-color: #417a95;
+    transition: background-color 0.4s ease;
+}
+
+body.dark-mode th {
+    background-color: #a6daf2;
+    color: #040506;
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+body.dark-mode td {
+    background-color: #0F1212;
+    color: #a6daf2;
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+body.dark-mode .table-container {
+    /* border: 2px solid #0F1212;  */
+    background-color: #0F1212; 
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+/* SIDEBAR DARK MODE CSS */
+/* ================================================================== */
+body.dark-mode .sidebar {
+    background-color: #a6daf2;
+    transition: width 0.3s ease, background-color 0.4s ease;
+}
+
+body.dark-mode .sidebar a {
+    color: #0d4159;
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+body.dark-mode .sidebar a:hover {
+    background-color: #417a95;
+    color: #040506;
+}
+
+/* HEADER DARK MODE CSS */
+/* ================================================================== */
+body.dark-mode .header {
+    background-color: #040506;
+    color: #a6daf2;
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+body.dark-mode .header h1 {
+    color: #a6daf2;
+}
+
+/* Dark Mode SVG Icon Styles */
+body.dark-mode .sidebar img {
+    /* Invert colors for dark mode */
+    filter: invert(1) brightness(2);
+}
+
+/* Optional: Add a subtle hover effect for dark mode */
+body.dark-mode .sidebar a:hover img {
+    filter: invert(1) brightness(2.5);
+    opacity: 0.9;
+}
+

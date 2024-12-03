@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Add Inventory</title>
-    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="admin.css">
     <style>
         .form-container {
             max-width: 500px;

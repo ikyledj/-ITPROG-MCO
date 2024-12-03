@@ -16,7 +16,7 @@ $employees_result = $conn->query("SELECT user_id, username FROM users WHERE role
 <head>
     <meta charset="UTF-8">
     <title>Manage Accounts</title>
-    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="admin.css">
     <style>
         .employee-container {
             display: flex;
@@ -74,7 +74,7 @@ $employees_result = $conn->query("SELECT user_id, username FROM users WHERE role
             display: block;
             text-decoration: none;
             color: white;
-            background-color: #002e20;
+            background-color: #175671;
             padding: 10px;
             border-radius: 5px;
             text-align: center;

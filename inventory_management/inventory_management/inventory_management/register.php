@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create New Account</title>
-    <link rel="stylesheet" href="styles1.css"> <!-- Ensure your CSS file is linked -->
+    <link rel="stylesheet" href="admin.css"> <!-- Ensure your CSS file is linked -->
     <style>
         form {
             display: flex;
@@ -44,7 +44,7 @@
             font-size: 14px;
             padding: 10px;
             width: 100%;
-            background-color: #002e20; /* Primary color */
+            background-color: #175671; /* Primary color */
             color: white; /* Text color */
             border: none;
             border-radius: 5px;

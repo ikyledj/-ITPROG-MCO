@@ -34,7 +34,7 @@ $result = $stmt->get_result();
 <head>
     <meta charset="UTF-8">
     <title>Transaction History</title>
-    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="admin.css">
     <style>
         .table-container {
             max-width: 800px;

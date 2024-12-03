@@ -11,7 +11,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
 <head>
     <meta charset="UTF-8">
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="admin.css">
     <!-- Add Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -28,7 +28,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
             display: inline-flex;
             align-items: center;
             padding: 12px 24px;
-            background-color: #002e20;
+            background-color: #0d4159;
             color: white;
             text-decoration: none;
             border-radius: 25px;
@@ -37,7 +37,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
         }
 
         .nav-button:hover {
-            background-color: #305a4c;
+            background-color: #6aa3bd;
         }
 
         .nav-button img {
@@ -46,13 +46,13 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
         }
 
         body.dark-mode .nav-button {
-            background-color: #d1fff1;
-            color: #002e20;
+            background-color: #a6daf2;
+            color: #0d4159;
             transition: background-color 0.3s ease;
         }
 
         body.dark-mode .nav-button:hover {
-            background-color: #a5cfc1;
+            background-color: #417a95;
         }
 
         body.dark-mode .nav-button img {
@@ -70,13 +70,13 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
             <ul class="nav-buttons">
                 <li>
                     <a href="register.php" class="nav-button">
-                        <img src="logo-icons/User Plus Rounded.svg" alt="Create Employee Account Icon">
+                        <img src="logo-icons/Add Account Rounded Icon.svg" alt="Create Employee Account Icon">
                         Create Employee Account
                     </a>
                 </li>
                 <li>
                     <a href="manage_accounts.php" class="nav-button">
-                        <img src="logo-icons/User Edit Rounded.svg" alt="Manage Accounts Icon">
+                        <img src="logo-icons/Manage Rounded User Settings.svg" alt="Manage Accounts Icon">
                         Manage Accounts
                     </a>
                 </li>
