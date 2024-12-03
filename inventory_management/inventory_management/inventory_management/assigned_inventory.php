@@ -90,7 +90,7 @@ $result = $stmt->get_result();
         }
 
         .dropdown-list li:hover {
-            background-color: #f0f0f0;
+            background-color: #D8D9D9;
         }
 
         .confirm-button {
@@ -142,6 +142,21 @@ $result = $stmt->get_result();
         body.dark-mode .close:hover, body.dark-mode .close:focus {
             color: #fff;
         }
+
+        body.dark-mode .confirm-button {
+            background-color: #d1fff1;
+            color: #0F1212;
+        }
+
+        body.dark-mode .confirm-button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        body.dark-mode .dropdown-list li:hover {
+            background-color: #6A6C6E;
+        }
+
     </style>
 </head>
 <body>
