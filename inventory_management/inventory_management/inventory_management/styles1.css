@@ -87,7 +87,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid #002e20;
+    border: 1px solid #305a4c;
 }
 
 th, td {
@@ -260,10 +260,6 @@ body.dark-mode {
 
 body.dark-mode {
     background-image: url('logo-icons/dark wave-haikei.svg');
-    background-size: cover; /* Covers entire page */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents image from repeating */
-    background-attachment: fixed; /* Keeps image fixed while scrolling */
     transition: background-color 0.4s ease, color 0.4s ease, filter 0.4s ease;
 }
 
@@ -365,3 +361,4 @@ body.dark-mode .sidebar a:hover img {
     filter: invert(1) brightness(2.5);
     opacity: 0.9;
 }
+
