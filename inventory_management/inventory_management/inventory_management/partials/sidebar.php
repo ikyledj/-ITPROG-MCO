@@ -6,7 +6,27 @@
 
 <div class="sidebar" id="sidebar">
     <div class="menu-items">
-        <a href="employee_dashboard.php">
+        <?php
+        // Determine the correct home page based on user role
+        session_start(); // Start the session to access user role
+        $homeLink = '';
+        
+        if (isset($_SESSION['role'])) {
+            switch ($_SESSION['role']) {
+                case 'employee':
+                    $homeLink = 'employee_dashboard.php';
+                    break;
+                case 'admin':
+                    $homeLink = 'admin_dashboard.php';
+                    break;
+                default:
+                    $homeLink = 'login.php'; // Fallback link
+            }
+        } else {
+            $homeLink = 'login.php'; // Redirect to login if no role is set
+        }
+        ?>
+        <a href="<?php echo $homeLink; ?>">
             <img src="logo-icons/Home Stroke Rounded.svg" alt="Home Icon">
             <span>Home</span>
         </a>
