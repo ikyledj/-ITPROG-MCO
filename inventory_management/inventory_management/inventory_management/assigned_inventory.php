@@ -103,6 +103,11 @@ $result = $stmt->get_result();
             cursor: pointer;
         }
 
+        .confirm-button:hover {
+            background-color: #003E39;  /* A lighter shade of green */
+            transition: background-color 0.3s ease;
+        }
+
         .confirm-button:disabled {
             background-color: #ccc;
             cursor: not-allowed;
@@ -155,6 +160,11 @@ $result = $stmt->get_result();
         body.dark-mode .confirm-button {
             background-color: #d1fff1;
             color: #0F1212;
+        }
+
+        body.dark-mode .confirm-button:hover {
+            background-color: #a5cfc1; 
+            transition: background-color 0.3s ease;
         }
 
         body.dark-mode .confirm-button:disabled {
