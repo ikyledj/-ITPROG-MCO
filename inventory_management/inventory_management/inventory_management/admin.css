@@ -391,6 +391,7 @@ body.dark-mode .input-container {
     /* border: 1px solid #ccc; */
     border-radius: 10px; /* Optional: Round the corners */
     margin-bottom: 20px; /* Optional: Space below the container */
+    gap: 10px;
 }
 
 /* TABLE DARK MODE CSS */

@@ -101,8 +101,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php include 'partials/sidebar.php'; ?>
 
     <div class="content">
-        <div class="form-container">
-            <h1>Add Inventory</h1>
+    <h1 style="text-align: center;">Add Inventory</h1>
+        <div class="input-container">
             <form method="POST" action="">
                 <label for="user_id">User ID:</label>
                 <input type="text" id="user_id" name="user_id" value="<?= htmlspecialchars($user_id); ?>" readonly>

@@ -34,14 +34,14 @@ $employees_result = $conn->query("SELECT user_id, username FROM users WHERE role
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             cursor: pointer;
-            transition: transform 0.3s, box-shadow 0.3s;
-            transition: color 0.4s ease, background-color 0.4s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
         }
 
         .employee-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-        }
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            background-color: #e0e0e0;
+        }   
 
         .employee-card h3 {
             margin: 0;
@@ -102,7 +102,7 @@ $employees_result = $conn->query("SELECT user_id, username FROM users WHERE role
 
         body.dark-mode .employee-card {
             background-color: #0F1212;
-            transition: color 0.4s ease, background-color 0.4s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.4s ease;
         }
 
         body.dark-mode .modal {
