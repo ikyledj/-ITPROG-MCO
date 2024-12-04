@@ -33,10 +33,14 @@ if (isset($_POST['new_password'], $_POST['confirm_password'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php
+        session_start(); // Start the session to access user role
+        $cssFile = isset($_SESSION['role']) && $_SESSION['role'] === 'admin' ? 'admin.css' : 'styles1.css';
+    ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Management</title>
-    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="<?php echo $cssFile; ?>">
     <!-- Add Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>

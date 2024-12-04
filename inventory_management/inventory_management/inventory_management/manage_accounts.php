@@ -54,7 +54,7 @@ $employees_result = $conn->query("SELECT user_id, username FROM users WHERE role
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: white;
+            background-color: #f4f4f4;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -103,6 +103,19 @@ $employees_result = $conn->query("SELECT user_id, username FROM users WHERE role
         body.dark-mode .employee-card {
             background-color: #0F1212;
             transition: color 0.4s ease, background-color 0.4s ease;
+        }
+
+        body.dark-mode .modal {
+            background-color: #0F1212;
+        }
+
+        body.dark-mode .modal .options a {
+            color: #0F1212;
+            background-color: #a6daf2;
+        }
+
+        body.dark-mode .modal .options a:hover {
+            background-color: #417a95;
         }
 
     </style>

@@ -47,7 +47,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
 
         body.dark-mode .nav-button {
             background-color: #a6daf2;
-            color: #0d4159;
+            color: #0F1212;
             transition: background-color 0.3s ease;
         }
 

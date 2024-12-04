@@ -53,7 +53,7 @@
         }
 
         input[type="submit"]:hover {
-            background-color: #305a4c; /* Slightly lighter color for hover */
+            background-color: #a6daf2; /* Slightly lighter color for hover */
         }
 
     </style>

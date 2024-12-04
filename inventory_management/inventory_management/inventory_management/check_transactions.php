@@ -36,7 +36,7 @@ $result = $stmt->get_result();
     <title>Transaction History</title>
     <link rel="stylesheet" href="admin.css">
     <style>
-        .table-container {
+        /* .table-container {
             max-width: 800px;
             margin: auto;
             overflow-x: auto;
@@ -51,11 +51,11 @@ $result = $stmt->get_result();
         th, td {
             padding: 10px;
             text-align: left;
-            border: 1px solid #ccc;
+            border: 1px solid #a6daf2;
         }
 
         th {
-            background-color: #002e20;
+            background-color: #417a95;
             color: white;
         }
 
@@ -67,6 +67,67 @@ $result = $stmt->get_result();
             text-align: center;
             margin-bottom: 20px;
         }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        table, th, td {
+            border: 1px solid #6aa3be;
+        }
+
+        th, td {
+            padding: 15px;
+        }
+
+        th {
+            background-color: #0d4159;
+            color: white;
+            text-align: center;
+        }
+
+        td {
+            background-color: #f2f2f2;
+            color: #0d4159;
+            text-align: left;
+        }
+
+        .table-container {
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px auto;
+            max-width: 800px;
+            background-color: #ECEFF0;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        body.dark-mode table,
+        body.dark-mode th,
+        body.dark-mode td {
+            border-color: #417a95;
+            transition: background-color 0.4s ease;
+        }
+
+        body.dark-mode th {
+            background-color: #a6daf2;
+            color: #040506;
+            transition: color 0.4s ease, background-color 0.4s ease;
+        }
+
+        body.dark-mode td {
+            background-color: #0F1212;
+            color: #a6daf2;
+            transition: color 0.4s ease, background-color 0.4s ease;
+        }
+
+        body.dark-mode .table-container {
+            background-color: #0F1212; 
+            transition: color 0.4s ease, background-color 0.4s ease;
+        } */
     </style>
 </head>
 <body>
