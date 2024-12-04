@@ -173,7 +173,7 @@ $result = $stmt->get_result();
     <?php include 'partials/sidebar.php'; ?>
     <div class="content" id="content">
     <h1 style="text-align: center;">Assigned Inventory for <br><?= $_SESSION['username']; ?></h1>
-        <div class="input-container">
+        <div class="table-container">
             <table>
                 <thead>
                     <tr>
