@@ -105,6 +105,10 @@ $employees_result = $conn->query("SELECT user_id, username FROM users WHERE role
             transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.4s ease;
         }
 
+        body.dark-mode .employee-card:hover {
+            background-color: #333;
+        }
+
         body.dark-mode .modal {
             background-color: #0F1212;
         }
