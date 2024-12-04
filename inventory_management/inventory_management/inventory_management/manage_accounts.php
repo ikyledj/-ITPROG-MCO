@@ -35,6 +35,7 @@ $employees_result = $conn->query("SELECT user_id, username FROM users WHERE role
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             cursor: pointer;
             transition: transform 0.3s, box-shadow 0.3s;
+            transition: color 0.4s ease, background-color 0.4s ease;
         }
 
         .employee-card:hover {
@@ -81,7 +82,7 @@ $employees_result = $conn->query("SELECT user_id, username FROM users WHERE role
         }
 
         .modal .options a:hover {
-            background-color: #305a4c;
+            background-color: #6aa3be;
         }
 
         .overlay {
@@ -98,6 +99,12 @@ $employees_result = $conn->query("SELECT user_id, username FROM users WHERE role
         .overlay.active {
             display: block;
         }
+
+        body.dark-mode .employee-card {
+            background-color: #0F1212;
+            transition: color 0.4s ease, background-color 0.4s ease;
+        }
+
     </style>
 </head>
 <body>
@@ -105,7 +112,7 @@ $employees_result = $conn->query("SELECT user_id, username FROM users WHERE role
     <?php include 'partials/sidebar.php'; ?>
 
     <div class="content">
-        <h1>Manage Accounts</h1>
+        <h1 style="text-align: center;">Manage Accounts</h1>
         <div class="employee-container">
             <?php while ($employee = $employees_result->fetch_assoc()): ?>
                 <div class="employee-card" data-user-id="<?= $employee['user_id']; ?>" data-username="<?= $employee['username']; ?>">
@@ -117,7 +124,7 @@ $employees_result = $conn->query("SELECT user_id, username FROM users WHERE role
 
     <div class="overlay"></div>
     <div class="modal">
-        <h2 id="employee-name"></h2>
+        <h2 style="text-align: center;" id="employee-name"></h2>
         <div class="options">
             <a href="#" id="add-inventory">Add Inventory</a>
             <a href="#" id="check-transactions">Check Transactions</a>
