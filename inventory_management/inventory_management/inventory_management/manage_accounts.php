@@ -122,6 +122,45 @@ $employees_result = $conn->query("SELECT user_id, username FROM users WHERE role
             background-color: #417a95;
         }
 
+        @keyframes modalFadeIn {
+            from {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(0.7);
+            }
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+
+        .modal.active {
+            display: block;
+            animation: modalFadeIn 0.3s ease-out forwards;
+        }
+
+        @keyframes overlayFadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .overlay.active {
+            display: block;
+            animation: overlayFadeIn 0.3s ease-out forwards;
+        }
+
+        /* Dark mode adjustments for animations */
+        body.dark-mode .modal.active {
+            animation: modalFadeIn 0.3s ease-out forwards;
+        }
+
+        body.dark-mode .overlay.active {
+            animation: overlayFadeIn 0.3s ease-out forwards;
+        }
+
     </style>
 </head>
 <body>
