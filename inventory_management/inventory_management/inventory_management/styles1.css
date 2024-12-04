@@ -168,7 +168,7 @@ td {
     padding: 12px 13px;
     text-decoration: none;
     font-size: 16px;
-    color: #717F7E;
+    color: #aeaeae;
     display: flex;
     align-items: center;
     transition: 0.3s;
@@ -329,13 +329,13 @@ body.dark-mode .sidebar {
 }
 
 body.dark-mode .sidebar a {
-    color: #002e20;
+    color: #49704f;
     transition: color 0.4s ease, background-color 0.4s ease;
 }
 
 body.dark-mode .sidebar a:hover {
     background-color: #a5cfc1;
-    color: #040506;
+    color: #042904;
 }
 
 /* HEADER DARK MODE CSS */

@@ -128,8 +128,15 @@ $result = $stmt->get_result();
         }
 
         body.dark-mode .edit-button {
-            background-color: #222;
+            background-color: #d1fff1;
+            color: #0F1212;
         }
+
+        body.dark-mode .edit-button:hover {
+            background-color: #a5cfc1;
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+
         body.dark-mode .modal-content {
             background-color: #222;
             color: #ccc;
@@ -166,7 +173,7 @@ $result = $stmt->get_result();
     <?php include 'partials/sidebar.php'; ?>
     <div class="content" id="content">
     <h1 style="text-align: center;">Assigned Inventory for <br><?= $_SESSION['username']; ?></h1>
-        <div class="table-container">
+        <div class="input-container">
             <table>
                 <thead>
                     <tr>

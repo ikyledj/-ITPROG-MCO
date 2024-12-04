@@ -85,6 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         .form-container input[type="submit"] {
+            font-family: 'Montserrat', Arial, sans-serif;
             background-color: #002e20;
             color: white;
             cursor: pointer;

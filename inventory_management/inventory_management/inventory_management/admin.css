@@ -173,6 +173,8 @@ input[type="submit"]:hover {
     /* border: 1px solid #ccc; */
     border-radius: 10px; /* Optional: Round the corners */
     margin-bottom: 20px; /* Optional: Space below the container */
+    gap: 10px;
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 /* TABLE CSS */
@@ -267,7 +269,7 @@ td {
     padding: 12px 13px;
     text-decoration: none;
     font-size: 16px;
-    color: #717F7E;
+    color: #bbbbbb;
     display: flex;
     align-items: center;
     transition: 0.3s;
@@ -392,6 +394,7 @@ body.dark-mode .input-container {
     border-radius: 10px; /* Optional: Round the corners */
     margin-bottom: 20px; /* Optional: Space below the container */
     gap: 10px;
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 /* TABLE DARK MODE CSS */
@@ -429,13 +432,13 @@ body.dark-mode .sidebar {
 }
 
 body.dark-mode .sidebar a {
-    color: #0d4159;
+    color: #406c81;
     transition: color 0.4s ease, background-color 0.4s ease;
 }
 
 body.dark-mode .sidebar a:hover {
-    background-color: #417a95;
-    color: #040506;
+    background-color: #76a6bd;
+    color: #052c3e;
 }
 
 /* HEADER DARK MODE CSS */
