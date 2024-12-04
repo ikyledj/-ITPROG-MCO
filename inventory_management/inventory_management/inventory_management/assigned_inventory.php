@@ -94,6 +94,7 @@ $result = $stmt->get_result();
         }
 
         .confirm-button {
+            font-family: 'Montserrat', Arial, sans-serif;
             background-color: #002e20;
             color: white;
             padding: 5px 10px;
@@ -108,6 +109,7 @@ $result = $stmt->get_result();
         }
 
         .edit-button {
+            font-family: 'Montserrat', Arial, sans-serif;
             background-color: #003E39;
             color: white;
             padding: 10px 20px;
