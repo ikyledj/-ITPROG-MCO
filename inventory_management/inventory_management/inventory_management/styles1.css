@@ -206,7 +206,12 @@ td {
     padding: 20px;
     transition: margin-left 0.3s ease;
     z-index: 0;
+    justify-content: center;
+    margin-top: 50px;
+    /* height: calc(100vh - 90px); */
+    overflow-y: auto; /* Allow vertical scrolling */
 }
+
 
 .toggle-btn {
     position: fixed;
