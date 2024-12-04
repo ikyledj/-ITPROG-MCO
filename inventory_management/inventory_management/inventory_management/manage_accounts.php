@@ -18,6 +18,15 @@ $employees_result = $conn->query("SELECT user_id, username FROM users WHERE role
     <title>Manage Accounts</title>
     <link rel="stylesheet" href="admin.css">
     <style>
+
+        .content h1 {
+            margin-bottom: 10px; /* Reduce the bottom margin */
+        }
+
+        .employee-container {
+            padding-top: 10px; /* Adjust the top padding for tighter spacing */
+        }
+        
         .employee-container {
             display: flex;
             flex-wrap: wrap;
